@@ -7,6 +7,11 @@ const App = () => (
   <Router>
   <div>
     <Navigation />
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
+    </Switch>
   </div>
   </Router>
 );
